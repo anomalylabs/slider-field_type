@@ -1,4 +1,4 @@
-<?php namespace Addon\FieldType\Slider;
+<?php namespace Streams\Addon\FieldType\Slider;
 
 use Streams\Core\Addon\FieldTypeAbstract;
 
