@@ -10,21 +10,4 @@ class SliderFieldType extends FieldTypeAbstract
      * @var string
      */
     public $columnType = 'slider';
-
-    /**
-     * Field type version
-     *
-     * @var string
-     */
-    public $version = '1.1.0';
-
-    /**
-     * Field type author information.
-     *
-     * @var array
-     */
-    public $author = array(
-        'name' => 'AI Web Systems, Inc.',
-        'url'  => 'http://aiwebsystems.com/',
-    );
 }
