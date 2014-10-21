@@ -1,13 +1,7 @@
-<?php namespace Anomaly\Streams\FieldType\Slider;
+<?php namespace Anomaly\Streams\Addon\FieldType\Slider;
 
-use Streams\Core\Addon\FieldTypeAbstract;
+use Anomaly\Streams\Platform\Addon\FieldType\FieldTypeAddon;
 
-class SliderFieldType extends FieldTypeAbstract
+class SliderFieldType extends FieldTypeAddon
 {
-    /**
-     * The database column type this field type uses.
-     *
-     * @var string
-     */
-    public $columnType = 'slider';
 }
