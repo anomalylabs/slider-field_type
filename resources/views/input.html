@@ -1,0 +1,25 @@
+{{ asset.add group="streams.css" file="field_type.slider::css/bootstrap-slider.css" }}
+{{ asset.add group="streams.js" file="field_type.slider::js/bootstrap-slider.min.js" }}
+{{ asset.add group="streams.js" file="field_type.slider::js/input.js" filters="live" }}
+
+<label>
+    {{ minLabel }}: {{ min }}
+</label>
+
+<label class="pull-right">
+    {{ maxLabel }}: {{ max }}
+</label>
+
+<input
+        type="text"
+        name="{{ name }}"
+        class="{{ class }} slider"
+        data-slider-min="{{ min }}"
+        data-slider-max="{{ max }}"
+        data-slider-step="{{ step }}"
+        data-slider-value="{{ sliderValue }}"
+        >
+
+<label>
+    {{ lang.trans string="misc.value" }}: <span class="value">{{ value }}</span>
+</label>
