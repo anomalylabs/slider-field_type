@@ -29,12 +29,12 @@ class SliderFieldType extends FieldType
     {
         $data = parent::getInputData();
 
-        $data['min']  = $this->getConfig('min', 0);
-        $data['max']  = $this->getConfig('max', 10);
-        $data['step'] = $this->getConfig('step', 1);
+        $data['min']  = $this->pullConfig('min', 0);
+        $data['max']  = $this->pullConfig('max', 10);
+        $data['step'] = $this->pullConfig('step', 1);
 
-        $data['minLabel'] = trans($this->getConfig('min_label', 'misc.min'));
-        $data['maxLabel'] = trans($this->getConfig('max_label', 'misc.max'));
+        $data['minLabel'] = trans($this->pullConfig('min_label', 'misc.min'));
+        $data['maxLabel'] = trans($this->pullConfig('max_label', 'misc.max'));
 
         $data['sliderValue'] = str_contains($data['value'], ',') ? "[{$data['value']}]" : $data['value'];
 
