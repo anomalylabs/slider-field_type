@@ -1,4 +1,4 @@
-<?php namespace Anomaly\Streams\Addon\FieldType\Slider;
+<?php namespace Anomaly\SliderFieldType;
 
 use Anomaly\Streams\Platform\Addon\FieldType\FieldType;
 
