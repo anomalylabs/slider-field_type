@@ -1,5 +1,5 @@
 {
-    "name": "anomaly/slider-field-type",
+    "name": "anomaly/slider-field_type",
     "type": "streams-addon",
     "description": "Slider field type.",
     "authors": [
