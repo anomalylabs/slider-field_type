@@ -3,23 +3,25 @@
 {{ add_asset("streams.js", "anomaly.field_type.slider::js/input.js") }}
 
 <label>
-    {{ field_type.config.min_label }}: {{ field_type.config.min }}
+    {{ trans(field_type.config.min_label ?: "anomaly.field_type.slider::label.min") }}:
+    {{ field_type.config.min_value ?: 0 }}
 </label>
 
 <label class="pull-right">
-    {{ field_type.config.max_label }}: {{ field_type.config.max }}
+    {{ trans(field_type.config.max_label ?: "anomaly.field_type.slider::label.max") }}:
+    {{ field_type.config.max_value ?: 10 }}
 </label>
 
 <input
         type="text"
         class="slider"
         name="{{ field_type.getFieldName() }}"
-        data-slider-min="{{ field_type.config.min }}"
-        data-slider-max="{{ field_type.config.max }}"
-        data-slider-step="{{ field_type.config.step }}"
-        data-slider-value="{{ field_type.config.slider_value }}"
+        data-slider-min="{{ field_type.config.min_value ?: 0 }}"
+        data-slider-max="{{ field_type.config.max_value ?: 10 }}"
+        data-slider-step="{{ field_type.config.step ?: 1 }}"
+        data-slider-value="{{ field_type.value }}"
         >
 
 <label>
-    {{ trans("misc.value") }}: <span class="value">{{ field_type.value }}</span>
+    {{ trans("anomaly.field_type.slider::label.value") }}: <span class="value">{{ field_type.value }}</span>
 </label>
