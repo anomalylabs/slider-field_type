@@ -3,5 +3,5 @@
 return [
     'value' => 'Value',
     'max'   => 'Maximum',
-    'min'   => 'Minimum',
+    'min'   => 'Minimum'
 ];

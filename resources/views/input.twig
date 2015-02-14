@@ -4,20 +4,20 @@
 
 <label>
     {{ trans(field_type.config.min_label ?: "anomaly.field_type.slider::label.min") }}:
-    {{ field_type.config.min_value ?: 0 }}
+    {{ field_type.config.min ?: 0 }}
 </label>
 
 <label class="pull-right">
     {{ trans(field_type.config.max_label ?: "anomaly.field_type.slider::label.max") }}:
-    {{ field_type.config.max_value ?: 10 }}
+    {{ field_type.config.max ?: 10 }}
 </label>
 
 <input
         type="text"
         class="slider"
         name="{{ field_type.getInputName() }}"
-        data-slider-min="{{ field_type.config.min_value ?: 0 }}"
-        data-slider-max="{{ field_type.config.max_value ?: 10 }}"
+        data-slider-min="{{ field_type.config.min ?: 0 }}"
+        data-slider-max="{{ field_type.config.max ?: 10 }}"
         data-slider-step="{{ field_type.config.step ?: 1 }}"
         data-slider-value="{{ field_type.value }}"
         >

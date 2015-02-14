@@ -2,5 +2,5 @@
 
 return [
     'name'        => 'Slider',
-    'description' => 'A slider input field type.',
+    'description' => 'A range slider field type.'
 ];

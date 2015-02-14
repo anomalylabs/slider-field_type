@@ -1,7 +1,7 @@
 {
     "name": "anomaly/slider-field_type",
     "type": "streams-addon",
-    "description": "A slider input field type.",
+    "description": "A range slider field type.",
     "keywords": [
         "streams-addon",
         "slider",
