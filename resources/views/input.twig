@@ -1,27 +1,28 @@
-{{ asset_add("styles.css", "anomaly.field_type.slider::css/bootstrap-slider.css") }}
-{{ asset_add("scripts.js", "anomaly.field_type.slider::js/bootstrap-slider.min.js") }}
 {{ asset_add("scripts.js", "anomaly.field_type.slider::js/input.js") }}
 
-<label>
+<label class="pull-left">
     {{ trans(field_type.config.min_label ?: "anomaly.field_type.slider::label.min") }}:
-    {{ field_type.config.min ?: 0 }}
+    {{ field_type.config.min }}
 </label>
 
 <label class="pull-right">
     {{ trans(field_type.config.max_label ?: "anomaly.field_type.slider::label.max") }}:
-    {{ field_type.config.max ?: 10 }}
+    {{ field_type.config.max }}
 </label>
 
-<input
-        type="text"
+<div class="clearfix"></div>
+
+<div
         class="slider"
-        name="{{ field_type.getInputName() }}"
-        data-slider-min="{{ field_type.config.min ?: 0 }}"
-        data-slider-max="{{ field_type.config.max ?: 10 }}"
-        data-slider-step="{{ field_type.config.step ?: 1 }}"
-        data-slider-value="{{ field_type.value }}"
-        >
+        data-min="{{ field_type.config.min }}"
+        data-max="{{ field_type.config.max }}"
+        data-step="{{ field_type.config.step }}"
+        data-value="{{ field_type.value }}">
+
+    <input type="hidden" name="{{ field_type.getInputName() }}">
+
+</div>
 
 <label>
-    {{ trans("anomaly.field_type.slider::label.value") }}: <span class="value">{{ field_type.value }}</span>
+    {{ trans("anomaly.field_type.slider::label.value") }}: <span class="value">{{ field_type.value ?: 0 }}</span>
 </label>

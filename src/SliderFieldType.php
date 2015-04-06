@@ -20,4 +20,15 @@ class SliderFieldType extends FieldType
      */
     protected $inputView = 'anomaly.field_type.slider::input';
 
+    /**
+     * The field config.
+     *
+     * @var array
+     */
+    protected $config = [
+        'min'  => 0,
+        'max'  => 10,
+        'step' => 1
+    ];
+
 }

@@ -1,13 +1,20 @@
-$(document).ready(function () {
+$(function () {
 
-    $('input.slider').slider({
-        formatter: function (value) {
-            return 'Current value: ' + value;
-        }
-    });
+    // Initialize sliders
+    $('.slider').each(function () {
 
-    $('input.slider').on('slide', function (slide) {
+        var slider = $(this);
 
-        $(this).parent('div').find('.value').text(slide.value);
+        slider.slider({
+            min: slider.data('min'),
+            max: slider.data('max'),
+            step: slider.data('step'),
+            value: slider.data('value')
+        });
+
+        slider.on('slide', function (event, ui) {
+            slider.next('label').find('.value').text(ui.value);
+            slider.find('input').val(ui.value);
+        });
     });
 });
