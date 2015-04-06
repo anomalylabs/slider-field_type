@@ -9,8 +9,9 @@ $(function () {
             min: slider.data('min'),
             max: slider.data('max'),
             step: slider.data('step'),
-            value: slider.data('value')
-        });
+            value: slider.data('value'),
+            range: slider.data('range')
+        }).addSliderSegments(slider.data('max'));
 
         slider.on('slide', function (event, ui) {
             slider.next('label').find('.value').text(ui.value);
