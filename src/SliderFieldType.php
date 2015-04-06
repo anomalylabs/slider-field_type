@@ -26,9 +26,10 @@ class SliderFieldType extends FieldType
      * @var array
      */
     protected $config = [
-        'min'  => 0,
-        'max'  => 10,
-        'step' => 1
+        'range' => 'min',
+        'max'   => 10,
+        'min'   => 0,
+        'step'  => 1
     ];
 
 }
