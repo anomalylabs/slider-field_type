@@ -1,19 +1,22 @@
 <?php
 
 return [
-    'min'       => [
-        'type' => 'anomaly.field_type.decimal'
+    'min'  => [
+        'type'   => 'anomaly.field_type.integer',
+        'config' => [
+            'min' => false
+        ]
     ],
-    'min_label' => [
-        'type' => 'anomaly.field_type.text'
+    'max'  => [
+        'type'   => 'anomaly.field_type.integer',
+        'config' => [
+            'min' => false
+        ]
     ],
-    'max'       => [
-        'type' => 'anomaly.field_type.decimal'
-    ],
-    'max_label' => [
-        'type' => 'anomaly.field_type.text'
-    ],
-    'step'      => [
-        'type' => 'anomaly.field_type.decimal'
-    ],
+    'step' => [
+        'type'   => 'anomaly.field_type.integer',
+        'config' => [
+            'min' => 1
+        ]
+    ]
 ];

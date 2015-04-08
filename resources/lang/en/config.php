@@ -1,19 +1,16 @@
 <?php
 
 return [
-    'min'       => [
-        'label' => 'Minimum'
+    'min'  => [
+        'label'        => 'Minimum Value',
+        'instructions' => 'What is the minimum value allowed?'
     ],
-    'min_label' => [
-        'label' => 'Minimum Label'
+    'max'  => [
+        'label'        => 'Maximum Value',
+        'instructions' => 'What is the maximum value allowed?'
     ],
-    'max'       => [
-        'label' => 'Maximum'
-    ],
-    'max_label' => [
-        'label' => 'Maximum Label'
-    ],
-    'step'      => [
-        'label' => 'Step'
-    ],
+    'step' => [
+        'label'        => 'Value Interval',
+        'instructions' => 'Select the intervals for the slider input.'
+    ]
 ];
