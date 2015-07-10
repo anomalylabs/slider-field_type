@@ -5,13 +5,22 @@ $(function () {
 
         var slider = $(this);
 
+        var value = String(slider.data('value')).split(',');
+
         slider.slider({
             min: slider.data('min'),
             max: slider.data('max'),
             step: slider.data('step'),
-            value: slider.data('value'),
             range: slider.data('range')
-        }).addSliderSegments(slider.data('max'));
+        });
+
+        if (value.length > 1) {
+            slider.slider('values', value);
+        } else {
+            slider.slider('value', value);
+        }
+
+        slider.addSliderSegments(slider.data('max'));
 
         slider.on('slide', function (event, ui) {
 
