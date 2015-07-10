@@ -14,8 +14,14 @@ $(function () {
         }).addSliderSegments(slider.data('max'));
 
         slider.on('slide', function (event, ui) {
-            slider.next('label').find('.value').text(ui.value);
-            slider.find('input').val(ui.value);
+
+            if (ui.values == undefined) {
+                slider.prev('label').find('.value').text(ui.value);
+                slider.find('input').val(ui.value);
+            } else {
+                slider.prev('label').find('.value').text(String(ui.values).replace(',', ' - '));
+                slider.find('input').val(ui.values);
+            }
         });
     });
 });

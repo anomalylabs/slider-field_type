@@ -1,8 +1,10 @@
+{{ asset_add("styles.css", "anomaly.field_type.slider::less/slider.less") }}
+{{ asset_add("scripts.js", "anomaly.field_type.slider::js/jquery-ui.slider.min.js") }}
 {{ asset_add("scripts.js", "anomaly.field_type.slider::js/extra.js") }}
 {{ asset_add("scripts.js", "anomaly.field_type.slider::js/input.js") }}
 
 <label>
-    {{ trans("anomaly.field_type.slider::label.value") }}: <span class="value">{{ field_type.value ?: 0 }}</span>
+    {{ trans("anomaly.field_type.slider::input.value") }}: <span class="value">{{ field_type.value ?: 0 }}</span>
 </label>
 
 <div
