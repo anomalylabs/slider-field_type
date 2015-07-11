@@ -25,5 +25,10 @@
         "psr-4": {
             "Anomaly\\SliderFieldType\\": "src/"
         }
+    },
+    "extra": {
+        "branch-alias": {
+            "1.0/master": "1.0.x-dev"
+        }
     }
 }
