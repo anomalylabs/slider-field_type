@@ -19,24 +19,25 @@ protected $fields = [
 
 ### `range`
 
-Specified the slider type:  
-- `false`: Not a range but a slider  
-- `true`: Can select the minimum and maximum of the range  
-- `min`: Can select a range with the maximum anchored and the minimum adjustable  
-- `max`: Can select a range with the minimum anchored and the maximum adjustable  
+The range selection mode:
+  
+`false`: Single value only - no range selection.  
+`true`: Range value only - select bottom and top value.  
+`'min'`: Range range value only - select top value from minimum value only. 
+`'max'`: Range range value only - select bottom value from maximum value only.  
 
 ### `min`
 
-Lowest allowed value of the slider. The default value is `1`.
+Minimum allowed value of the slider. The default value is `0`.
 
 ### `max`
 
-Highest allowed value of the slider. The default value is `10`.
+Maximum allowed value of the slider. The default value is `10`.
 
 ### `step`
 
-Step of the slider. The default value is `1`.
+The value of each notch of the slider. The default value is `1`.
 
 ### `default_value`
 
-The default value of the slider
+The default value of the slider.

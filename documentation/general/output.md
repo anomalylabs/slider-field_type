@@ -1,6 +1,8 @@
 # Output
 
-This field type returns the top and bottom value of the slider.
+This field type returns the value as stored in the database by default.
+
+For non range this will be a single value. For range sliders the values are separated with a comma.
 
 ### Top
 

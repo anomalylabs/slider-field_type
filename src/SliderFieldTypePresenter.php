@@ -14,14 +14,6 @@ class SliderFieldTypePresenter extends FieldTypePresenter
 {
 
     /**
-     * The decorated object.
-     * This is for IDE hinting.
-     *
-     * @var SliderFieldType
-     */
-    protected $object;
-
-    /**
      * Return the top value.
      *
      * @return null|integer|float
