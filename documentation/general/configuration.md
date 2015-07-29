@@ -21,9 +21,12 @@ protected $fields = [
 
 The range selection mode:
   
-`false`: Single value only - no range selection.  
-`true`: Range value only - select bottom and top value.  
-`'min'`: Range range value only - select top value from minimum value only. 
+`false`: Single value only - no range selection.
+
+`true`: Range value only - select bottom and top value.
+
+`'min'`: Range range value only - select top value from minimum value only.
+
 `'max'`: Range range value only - select bottom value from maximum value only.  
 
 ### `min`
