@@ -69,7 +69,7 @@ For non range this will be a single value. For range sliders the values are sepa
 
 ### `top()`
 
-Returns the top value.
+Returns the top value if a range was selected.
 
     // Twig usage
     {{ entry.example.top }}
@@ -79,7 +79,7 @@ Returns the top value.
 
 ### `bottom()`
 
-Returns the bottom value.
+Returns the bottom value if a range was selected.
 
     // Twig usage
     {{ entry.example.bottom }}
@@ -89,7 +89,7 @@ Returns the bottom value.
 
 ### `values()`
 
-Returns the values as an array.
+Returns the values as an array if a range was selected.
 
     // Twig usage
     {{ entry.example.values }}
