@@ -45,5 +45,8 @@ return [
     ],
     'default_value' => [
         'type' => 'anomaly.field_type.text'
+    ],
+    'unit' => [
+        'type' => 'anomaly.field_type.text'
     ]
 ];
