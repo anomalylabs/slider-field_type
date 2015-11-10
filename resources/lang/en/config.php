@@ -21,6 +21,10 @@ return [
         'label'        => 'Step',
         'instructions' => 'Enter the slider\'s step size.'
     ],
+    'unit'          => [
+        'label'        => 'Unit',
+        'instructions' => 'Enter the value unit.'
+    ],
     'default_value' => [
         'label'        => 'Default Value',
         'instructions' => 'Enter the default value or value range if any.',

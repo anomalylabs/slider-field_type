@@ -21,6 +21,14 @@ return [
         'label'        => 'Ecart',
         'instructions' => 'Quel est l\'écart entre deux valeurs ?'
     ],
+    'step'          => [
+        'label'        => 'Ecart',
+        'instructions' => 'Quel est l\'écart entre deux valeurs ?'
+    ],
+    'unit'          => [
+        'label'        => 'Unité',
+        'instructions' => 'Entrez l\'unité de valeur.'
+    ],
     'default_value' => [
         'label'        => 'Valeur par défaut',
         'instructions' => 'Entrez une valeur ou une plage par défaut.',

@@ -26,6 +26,7 @@ The slider field type provides a range slider input that allows users to select 
                 'min' => 1,
                 'max' => 10,
                 'step' => 2,
+                'unit' => 'ms',
                 'default_value' => 5
             ]
         ]
@@ -54,6 +55,10 @@ Maximum allowed value of the slider. The default value is `10`.
 ### `step`
 
 The value of each notch of the slider. The default value is `1`.
+
+### `unit`
+
+A suffex after the displayed value that represent the unit being changed, for example, milliseconds (ms).The default value is empty ``.
 
 ### `default_value`
 
