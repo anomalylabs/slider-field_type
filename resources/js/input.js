@@ -1,7 +1,7 @@
 $(function () {
 
     // Initialize sliders
-    $('.slider-field_type > .slider').each(function () {
+    $('.slider-field_type .slider').each(function () {
 
         var slider = $(this);
 
