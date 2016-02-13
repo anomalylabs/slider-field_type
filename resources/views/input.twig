@@ -4,7 +4,7 @@
 {{ asset_add("scripts.js", "anomaly.field_type.slider::js/input.js") }}
 
 <label>
-    {{ trans("anomaly.field_type.slider::input.value") }}: <span class="value">{{ field_type.value ?: 0 }} {{ field_type.config.unit }}</span>
+    {{ trans("anomaly.field_type.slider::input.value") }}: <span class="value">{{ field_type.value ?: 0 }}</span> {{ field_type.config.unit }}
 </label>
 
 <div

@@ -23,14 +23,12 @@ $(function () {
         slider.addSliderSegments(slider.data('max'));
 
         slider.on('slide', function (event, ui) {
-            
-            var textValue = ui.value + ' ' + slider.data().unit; 
 
             if (ui.values == undefined) {
-                slider.prev('label').find('.value').text(textValue);
+                slider.prev('label').find('.value').text(ui.value);
                 slider.find('input').val(ui.value);
             } else {
-                slider.prev('label').find('.value').text(String(textValue).replace(',', ' - '));
+                slider.prev('label').find('.value').text(String(ui.values).replace(',', '-'));
                 slider.find('input').val(ui.values);
             }
         });
