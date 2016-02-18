@@ -25,10 +25,10 @@ $(function () {
         slider.on('slide', function (event, ui) {
 
             if (ui.values == undefined) {
-                slider.prev('label').find('.value').text(ui.value);
+                slider.prev('.value-label').find('.value').text(ui.value);
                 slider.find('input').val(ui.value);
             } else {
-                slider.prev('label').find('.value').text(String(ui.values).replace(',', '-'));
+                slider.prev('.value-label').find('.value').text(String(ui.values).replace(',', '-'));
                 slider.find('input').val(ui.values);
             }
         });
