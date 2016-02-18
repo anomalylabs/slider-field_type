@@ -14,7 +14,8 @@
         data-step="{{ field_type.config.step }}"
         data-range="{{ field_type.config.range }}"
         data-unit="{{ field_type.config.unit }}"
-        data-value="{{ field_type.value }}">
+        data-value="{{ field_type.value }}"
+        {{ html_attributes(field_type.attributes) }}>
 
     <input type="hidden" name="{{ field_type.input_name }}" value="{{ field_type.value }}">
 
