@@ -8,7 +8,6 @@ use Anomaly\Streams\Platform\Addon\FieldType\FieldType;
  * @link          http://pyrocms.com/
  * @author        PyroCMS, Inc. <support@pyrocms.com>
  * @author        Ryan Thompson <ryan@pyrocms.com>
- * @package       Anomaly\Streams\Addon\FieldType\Slider
  */
 class SliderFieldType extends FieldType
 {
@@ -28,7 +27,7 @@ class SliderFieldType extends FieldType
     protected $config = [
         'max'   => 10,
         'min'   => 0,
-        'step'  => 1
+        'step'  => 1,
     ];
 
 }
