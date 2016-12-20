@@ -1,7 +1,7 @@
-$(function () {
+$(document).on('ajaxComplete ready', function () {
 
     // Initialize sliders
-    $('[data-provides="anomaly.field_type.slider"]').each(function () {
+    $('[data-provides="anomaly.field_type.slider"]:not(.ui-slider)').each(function () {
 
         var slider = $(this);
 
