@@ -1,18 +1,20 @@
 $(document).on('ajaxComplete ready', function () {
 
     // Initialize sliders
-    $('[data-provides="anomaly.field_type.slider"]:not(.ui-slider)').each(function () {
+    $('[data-provides="anomaly.field_type.slider"]:not([data-initialized])').each(function () {
 
         var slider = $(this);
 
         var value = String(slider.data('value')).split(',');
 
-        slider.slider({
-            min: slider.data('min'),
-            max: slider.data('max'),
-            step: slider.data('step'),
-            range: slider.data('range')
-        });
+        slider
+            .attr('data-initialized', '')
+            .slider({
+                min: slider.data('min'),
+                max: slider.data('max'),
+                step: slider.data('step'),
+                range: slider.data('range')
+            });
 
         if (value.length > 1) {
             slider.slider('values', value);
