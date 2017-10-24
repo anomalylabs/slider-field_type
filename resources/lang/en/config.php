@@ -1,14 +1,6 @@
 <?php
 
 return [
-    'range'         => [
-        'label'        => 'Range Input',
-        'instructions' => 'Capture a range of values with two drag handles?',
-        'disabled'     => 'Disabled',
-        'enabled'      => 'Enabled',
-        'min'          => 'Fixed to minimum value',
-        'max'          => 'Fixed to maximum value',
-    ],
     'min'           => [
         'label'        => 'Minimum Value',
         'instructions' => 'What is the minimum value allowed?',
@@ -27,7 +19,7 @@ return [
     ],
     'default_value' => [
         'label'        => 'Default Value',
-        'instructions' => 'Enter the default value or value range if any.',
-        'placeholder'  => '4,9',
+        'instructions' => 'Enter the default value.',
+        'placeholder'  => '4',
     ],
 ];

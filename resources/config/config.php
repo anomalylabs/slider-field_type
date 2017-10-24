@@ -1,18 +1,6 @@
 <?php
 
 return [
-    'range'         => [
-        'type'     => 'anomaly.field_type.select',
-        'required' => true,
-        'config'   => [
-            'options' => [
-                'false' => 'anomaly.field_type.slider::config.range.disabled',
-                'true'  => 'anomaly.field_type.slider::config.range.enabled',
-                'min'   => 'anomaly.field_type.slider::config.range.min',
-                'max'   => 'anomaly.field_type.slider::config.range.max',
-            ],
-        ],
-    ],
     'min'           => [
         'type'     => 'anomaly.field_type.text',
         'required' => true,
