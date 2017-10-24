@@ -13,6 +13,13 @@ class SliderFieldType extends FieldType
 {
 
     /**
+     * The input class.
+     *
+     * @var null|string
+     */
+    protected $class = null;
+
+    /**
      * The input view.
      *
      * @var string
@@ -25,9 +32,9 @@ class SliderFieldType extends FieldType
      * @var array
      */
     protected $config = [
-        'max'   => 10,
-        'min'   => 0,
-        'step'  => 1,
+        'max'  => 10,
+        'min'  => 0,
+        'step' => 1,
     ];
 
 }

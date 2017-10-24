@@ -3,36 +3,14 @@ $(document).on('ajaxComplete ready', function () {
     // Initialize sliders
     $('[data-provides="anomaly.field_type.slider"]:not([data-initialized])').each(function () {
 
-        var slider = $(this);
+        var $slider = $(this);
 
-        var value = String(slider.data('value')).split(',');
+        $slider.attr('data-initialized', '');
 
-        slider
-            .attr('data-initialized', '')
-            .slider({
-                min: slider.data('min'),
-                max: slider.data('max'),
-                step: slider.data('step'),
-                range: slider.data('range')
-            });
+        //$slider.addSliderSegments($slider.attr('max'));
 
-        if (value.length > 1) {
-            slider.slider('values', value);
-        } else {
-            slider.slider('value', value);
-        }
-
-        slider.addSliderSegments(slider.data('max'));
-
-        slider.on('slide', function (event, ui) {
-
-            if (ui.values == undefined) {
-                slider.prev('.value-label').find('.value').text(ui.value);
-                slider.find('input').val(ui.value);
-            } else {
-                slider.prev('.value-label').find('.value').text(String(ui.values).replace(',', '-'));
-                slider.find('input').val(ui.values);
-            }
+        $slider.on('input', function () {
+            $(this).prev('.value-label').find('.value').text(this.value);
         });
     });
 });
