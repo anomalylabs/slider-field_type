@@ -20,9 +20,12 @@
             "name": "Ryan Thompson",
             "email": "ryan@pyrocms.com",
             "homepage": "http://ryanthepyro.com/",
-            "role": "Owner"
+            "role": "Developer"
         }
     ],
+    "support": {
+        "email": "support@pyrocms.com"
+    },
     "require": {
         "anomaly/streams-platform": "^1.2"
     },
