@@ -1,8 +1,8 @@
 // Base Colors
-$shade-10: mix($brand-info, black, 85%) !default;
+$shade-10: mix(#11bef6, black, 85%) !default;
 $shade-1: mix(#2c2c2c, white, 10%) !default;
 $shade-0: #fff !default;
-$teal: mix($brand-info, white, 80%) !default;
+$teal: mix(#11bef6, white, 80%) !default;
 
 // Range Slider
 $range-handle-color: $shade-10 !default;
