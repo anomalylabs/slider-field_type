@@ -1,16 +1,16 @@
-$(document).on('ajaxComplete ready', function () {
+(function (window, document) {
+
+    let fields = Array.prototype.slice.call(
+        document.querySelectorAll('[data-provides="anomaly.field_type.slider"]')
+    );
 
     // Initialize sliders
-    $('[data-provides="anomaly.field_type.slider"]:not([data-initialized])').each(function () {
-
-        var $slider = $(this);
-
-        $slider.attr('data-initialized', '');
+    fields.forEach(function (field) {
 
         //$slider.addSliderSegments($slider.attr('max'));
 
-        $slider.on('input', function () {
-            $(this).prev('.value-label').find('.value').text(this.value);
+        field.addEventListener('input', function () {
+            field.parentNode.querySelector('.value').innerText = this.value;
         });
     });
-});
+})(window, document);

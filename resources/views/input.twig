@@ -2,9 +2,9 @@
 {#{{ asset_add("scripts.js", "anomaly.field_type.slider::js/segments.js") }}#}
 {{ asset_add("scripts.js", "anomaly.field_type.slider::js/input.js") }}
 
-<label class="value-label">
+<label class="slider__label value-label">
     {{ trans("anomaly.field_type.slider::input.value") }}:
-    <span class="value">{{ field_type.value ?: field_type.config.min }}</span>
+    <span class="slider__value value">{{ field_type.value ?: field_type.config.min }}</span>
     {{ field_type.config.unit }}
 </label>
 
