@@ -37,4 +37,20 @@ class SliderFieldType extends FieldType
         'step' => 1,
     ];
 
+    /**
+     * Return the default value.
+     *
+     * @return int
+     */
+    public function defaultValue()
+    {
+        $value = $this->config('default_value');
+
+        if ($value === null) {
+            return $this->config('min');
+        }
+
+        return $value;
+    }
+
 }
