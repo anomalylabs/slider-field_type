@@ -7,8 +7,6 @@
     // Initialize sliders
     fields.forEach(function (field) {
 
-        //$slider.addSliderSegments($slider.attr('max'));
-
         field.addEventListener('input', function () {
             field.parentNode.querySelector('.value').innerText = this.value;
         });
