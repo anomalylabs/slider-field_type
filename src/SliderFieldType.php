@@ -52,5 +52,4 @@ class SliderFieldType extends FieldType
 
         return $value;
     }
-
 }
