@@ -38,6 +38,28 @@ class SliderFieldType extends FieldType
     ];
 
     /**
+     * Return the validation rules.
+     *
+     * @return array
+     */
+    public function getRules()
+    {
+        $rules = parent::getRules();
+
+        $rules[] = 'numeric';
+
+        if (is_numeric($min = array_get($this->config, 'min'))) {
+            $rules[] = 'min:' . $min;
+        }
+
+        if (is_numeric($max = array_get($this->config, 'max'))) {
+            $rules[] = 'max:' . $max;
+        }
+
+        return $rules;
+    }
+
+    /**
      * Return the default value.
      *
      * @return int
